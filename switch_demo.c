@@ -2,25 +2,30 @@
 
 int main() {
   int choice;
-  printf("PLEASE ENTER ANY NUMBER BETWEEN 1 TO 5");
+  printf("PLEASE ENTER ANY NUMBER BETWEEN 1 TO 7");
   scanf("%d", &choice);
   switch (choice) {
   case 1:
-    printf("one\n");
+    printf("MONDAY\n");
     break;
   case 2:
-    printf("2\n");
+    printf("TUESDAY\n");
     break;
   case 3:
-    printf("3\n");
+    printf("WEDNESDAY\n");
     break;
   case 4:
-    printf("4\n");
+    printf("THURSDAY\n");
     break;
   case 5:
-    printf("5\n");
+    printf("FRIDAY\n");
     break;
-
+  case 6:
+    printf("SATDAY\n");
+    break;
+  case 7:
+    printf("SUNDAY\n");
+    break;
   default:
     printf("Wrong Choice");
   }
