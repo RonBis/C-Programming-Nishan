@@ -15,16 +15,17 @@ int main() {
     }
     printf("\n");
   }
-  printf("THE TRANSPOSED FORM IS: \n");
-
-  int arrT[3][3];
-  for (int j = 0; j < 3; j++) {
-    for (int i = 0; i < 3; i++) {
-      arrT[j][i] = arr[i][j];
-      printf("\t%d", arrT[j][i]);
-    }
+  int arr1[3], arr2[3];
+  for (int i = 0; i < 3; i++) {
+    arr1[i] = arr[i][i];
+    printf("\t%d", arr1[i]);
     printf("\n");
   }
 
+  // for (int j = 0; j < 3; j++) {
+  //   arr2[j] = arr[j][j];
+  //   printf("\t%d", arr2[j]);
+  //   printf("\n");
+  // }
   return 0;
 }
