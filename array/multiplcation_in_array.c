@@ -18,7 +18,7 @@ int main() {
     for (int j = 0; j < 3; j++) {
       arrM[i][j] = 0;
       for (int k = 0; k < 3; k++) {
-        arrM[j][k] += arr1[j][k] * arr2[k][j];
+        arrM[i][j] += arr1[i][k] * arr2[k][j];
       }
     }
   }
