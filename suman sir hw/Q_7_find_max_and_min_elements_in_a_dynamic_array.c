@@ -7,16 +7,17 @@ int main() {
   scanf("%d", &size);
   for (int i = 0; i < size; i++) {
     printf("ENTER THE VALUES IN %dth POSITION: ", i + 1);
-    scanf("%d", &ptr[i]);
+    scanf("%d", (ptr + i));
   }
   for (int i = 0; i < size; i++) {
-    if (maxN < ptr[i]) {
-      maxN = ptr[i];
+    if (maxN < *(ptr + i)) {
+      maxN = *(ptr + i);
     }
   }
+  minN = *(ptr + 0);
   for (int i = 0; i < size; i++) {
-    if (minN > ptr[i]) {
-      minN = ptr[i];
+    if (minN > *(ptr + i)) {
+      minN = *(ptr + i);
     }
   }
   printf("YOUR MAX NUM IS: %d\n", maxN);
