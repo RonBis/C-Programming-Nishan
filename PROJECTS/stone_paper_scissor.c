@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 int stonePaperScissor(char yourT, char compT) {
   if (yourT == compT) {
     return 0;
@@ -31,15 +32,15 @@ int main() {
   srand(time(0));
   int n = rand() % 100 + 1;
   if (n < 33) {
-    compT == 's';
+    compT = 's';
   } else if (n > 33 && n < 66) {
-    compT == 'p';
+    compT = 'p';
   } else {
-    compT == 'c';
+    compT = 'c';
   }
 
   int result = stonePaperScissor(yourT, compT);
-  printf("YOU CHOOSED %c AND COMPUTER CHOOSED %c .", yourT, compT);
+  printf("YOU CHOSE %c AND COMPUTER CHOSE %c .", yourT, compT);
   if (result == 0) {
     printf("MATCH IS DRAW!\n");
   } else if (result == 1) {
