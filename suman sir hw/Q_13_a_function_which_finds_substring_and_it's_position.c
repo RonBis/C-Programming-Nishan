@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
   char s[100], str[20];
   printf("ENTER A STRING: ");
-  //scanf("%s", s);
   gets(s);
   printf("ENTER THE STRING YOU ARE LOOKING FOR: ");
   gets(str);
-
-
 
   return 0;
 }
