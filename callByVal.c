@@ -22,7 +22,7 @@ int main() {
 
   printf("Please enter value of a and b respectively: ");
   scanf("%d%d", &a, &b);
-  printf("Before Swap:\n");
+  printf("Before Swap:\n")
   printf("a=%d,b=%d", a, b);
   printf("Adress of a:%p and address of b:%p\n", &a, &b);
   swap(a, b);
