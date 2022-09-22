@@ -8,18 +8,21 @@
 //   float salary;
 // } prsn;
 
-union Person
+struct Person
 {
   char Name[50];
     int citNo;
     float salary;
 };
 
-int main() {
 
+int main() 
+{
+
+  printf("%d\n",sizeof(struct Person));
   // assigning values to structure person 1
   // prsn person1;
-  union Person person1;
+  struct Person person1;
   strcpy(person1.Name, "Nishan Das");
   person1.citNo = 2000;
   person1.salary = 500;
