@@ -26,21 +26,21 @@ int stonePaperScissor(char yourT, char compT) {
 int main() {
   char yourT, compT;
 
-  printf("CHOOSE 'S' FOR STONE, 'P' FOR PAPER, 'C' FOR SCISSOR: ");
+  printf("CHOOSE 's' FOR STONE, 'p' FOR PAPER, 'c' FOR SCISSOR: ");
   scanf("%c", &yourT);
 
   srand(time(0));
   int n = rand() % 100 + 1;
-  if (n < 33) {
+  if (n <= 33) {
     compT = 's';
-  } else if (n > 33 && n < 66) {
+  } else if (n > 33 && n <= 66) {
     compT = 'p';
   } else {
     compT = 'c';
   }
 
   int result = stonePaperScissor(yourT, compT);
-  printf("YOU CHOSE %c AND COMPUTER CHOSE %c .", yourT, compT);
+  printf("YOU CHOSE %c AND COMPUTER CHOSE %c.\n", yourT, compT);
   if (result == 0) {
     printf("MATCH IS DRAW!\n");
   } else if (result == 1) {

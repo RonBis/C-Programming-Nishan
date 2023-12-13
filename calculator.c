@@ -28,7 +28,7 @@ int main() {
   int a, b, ch;
 
   printf(" PLEASE ENTER 1 FOR ADDITION; 2 FOR SUBSTRACTION; 3 FOR "
-         "MULTIPLICATION : ");
+         "MULTIPLICATION : 4 FOR DIVISION: ");
   scanf("%d", &ch);
 
   if (ch >= 1 && ch <= 4) {

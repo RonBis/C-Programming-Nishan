@@ -1,1 +1,2 @@
-truct Stude
+
+    // insertFromRear(12);

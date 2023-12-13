@@ -11,15 +11,14 @@
 struct Person
 {
   char Name[50];
-    int citNo;
-    float salary;
+  int citNo;
+  float salary;
 };
 
-
-int main() 
+int main()
 {
 
-  printf("%d\n",sizeof(struct Person));
+  printf("%d\n", sizeof(struct Person));
   // assigning values to structure person 1
   // prsn person1;
   struct Person person1;
